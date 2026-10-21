@@ -2,15 +2,15 @@
 
 | ID | Título | Caso | Severidad | Prioridad | Estado |
 |----|--------|------|-----------|-----------|--------|
-| BUG-01 | El sistema permite completar una compra con el carrito vacío | TC-05 | Alta (2/5) | Alta (2/5) | Abierto |
+| BUG-01-F | El sistema permite completar una compra con el carrito vacío | TC-05 | Alta (2/5) | Alta (2/5) | Abierto |
 
 ---
 
-## BUG-01 — El sistema permite completar una compra con el carrito vacío
+## BUG-01-F — El sistema permite completar una compra con el carrito vacío
 
 | Campo | Detalle |
 |-------|---------|
-| **ID** | BUG-01 |
+| **ID** | BUG-01-F |
 | **Título** | El sistema permite completar una compra con el carrito vacío |
 | **Descripción** | En https://www.saucedemo.com/ el botón Checkout del carrito está habilitado aunque no haya productos. El flujo llega al resumen con total $0.00 y confirma la orden con "Thank you for your order!". |
 | **Referencia** | TC-05 |

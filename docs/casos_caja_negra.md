@@ -13,7 +13,7 @@
 | TC-02 | Inicio de sesión con usuario bloqueado | Login | Funcional negativa | Alta | Passed | N/A |
 | TC-03 | Agregar dos productos y eliminar uno desde el carrito | Carrito | Funcional positiva | Alta | Passed | N/A |
 | TC-04 | Checkout con campos obligatorios vacíos | Checkout | Funcional negativa | Media | Passed | N/A |
-| TC-05 | Checkout con el carrito vacío | Checkout | Funcional negativa | Alta | **Failed** | BUG-01 |
+| TC-05 | Checkout con el carrito vacío | Checkout | Funcional negativa | Alta | **Failed** | BUG-01-F |
 
 Resultado: 4 Passed, 1 Failed. Los casos se ejecutaron con el script `evidencias/ejecutar_casos_saucedemo.py`, que repite los pasos de cada caso en el navegador y guarda las capturas en `evidencias/capturas/`.
 
@@ -123,5 +123,5 @@ Resultado: 4 Passed, 1 Failed. Los casos se ejecutaron con el script `evidencias
 **Resultado esperado final:** la compra se bloquea porque no hay productos.
 **Resultado obtenido:** el sistema permitió avanzar a `checkout-step-one`, mostró un resumen con "Total: $0.00" y al presionar Finish confirmó "Thank you for your order!".
 **Estado:** Failed
-**Defecto:** BUG-01 (ver `bugs/bugs_encontrados.md`)
+**Defecto:** BUG-01-F (ver `bugs/bugs_encontrados.md`)
 **Evidencia:** `TC-05a_carrito_vacio.png`, `TC-05b_resumen_sin_productos.png`, `TC-05c_orden_completada_vacia.png`

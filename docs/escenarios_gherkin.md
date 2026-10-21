@@ -45,13 +45,13 @@ Feature: Datos del comprador en el checkout
   Scenario Outline: Checkout con un campo obligatorio vacío
     Given que agregué "Sauce Labs Backpack" al carrito
     And estoy en la página "Checkout: Your Information"
-    When completo First Name "<nombre>", Last Name "<apellido>" y Postal Code "<codigo>"
+    When completo First Name "<nombre>", Last Name "<apellido>" y Postal Code "<código>"
     And presiono el botón "Continue"
     Then debería ver el mensaje "<mensaje>"
     And debería permanecer en la página "Checkout: Your Information"
 
     Examples:
-      | nombre | apellido | codigo | mensaje                        |
+      | nombre | apellido | código | mensaje                        |
       |        |          |        | Error: First Name is required  |
       | Ana    |          |        | Error: Last Name is required   |
       | Ana    | Quispe   |        | Error: Postal Code is required |
@@ -64,7 +64,7 @@ Feature: Datos del comprador en el checkout
     Then debería ver el mensaje "Thank you for your order!"
     And el carrito debería quedar vacío
 
-  @TC-05 @BUG-01 @error
+  @TC-05 @BUG-01-F @error
   Scenario: No se permite comprar con el carrito vacío
     Given que mi carrito no tiene productos
     When abro el carrito
@@ -80,4 +80,4 @@ Feature: Datos del comprador en el checkout
 | Acceso rechazado para un usuario bloqueado | TC-02 | Passed |
 | Checkout con un campo obligatorio vacío (3 filas) | TC-04 | Passed |
 | Compra completada con un producto | Flujo de referencia | No forma parte de los 5 casos |
-| No se permite comprar con el carrito vacío | TC-05 | Failed — BUG-01 |
+| No se permite comprar con el carrito vacío | TC-05 | Failed — BUG-01-F |
