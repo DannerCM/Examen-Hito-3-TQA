@@ -1,0 +1,27 @@
+{
+  "TC-01": {
+    "estado": "Passed",
+    "observado": "URL https://www.saucedemo.com/inventory.html, titulo 'Products'",
+    "fecha": "2026-10-20 21:15"
+  },
+  "TC-02": {
+    "estado": "Passed",
+    "observado": "Mensaje: 'Epic sadface: Sorry, this user has been locked out.'",
+    "fecha": "2026-10-20 21:15"
+  },
+  "TC-03": {
+    "estado": "Passed",
+    "observado": "Badge 2 -> 1; carrito: ['Sauce Labs Backpack']",
+    "fecha": "2026-10-20 21:15"
+  },
+  "TC-04": {
+    "estado": "Passed",
+    "observado": "Mensajes: 'Error: First Name is required' | 'Error: Last Name is required' | 'Error: Postal Code is required'",
+    "fecha": "2026-10-20 21:15"
+  },
+  "TC-05": {
+    "estado": "Failed",
+    "observado": "Items en carrito: 0; checkout permitido (https://www.saucedemo.com/checkout-step-one.html); Total: $0.00; mensaje final: 'Thank you for your order!'",
+    "fecha": "2026-10-20 21:15"
+  }
+}

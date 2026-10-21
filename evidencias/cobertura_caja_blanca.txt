@@ -1,0 +1,20 @@
+# Salida de coverage.py (--branch) sobre validar_compra.py
+# Fecha: 2026-10-20 21:14
+
+## Solo los 3 casos (CB-01 a CB-03)
+...                                                                      [100%]
+3 passed, 2 deselected in 0.07s
+Name                Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------
+validar_compra.py       8      1      6      1    86%   8
+---------------------------------------------------------------
+TOTAL                   8      1      6      1    86%
+
+## Con el ajuste (CB-01 a CB-05)
+.....                                                                    [100%]
+5 passed in 0.07s
+Name                Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------
+validar_compra.py       8      0      6      0   100%
+---------------------------------------------------------------
+TOTAL                   8      0      6      0   100%
